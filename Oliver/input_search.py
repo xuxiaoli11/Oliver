@@ -1,5 +1,5 @@
 def main(file, a):
-    # file = open("count_word.txt", 'r')
+    file = open('Oliver\\'+file, 'r')
     wordCounts = {}    # 先建立一个空的字典，用来存储单词 和相应出现的频次
     for line in file:
         line_process(line.lower(), wordCounts)  # 对于每一行都进行处理，调用lineprocess()函数，参数就是从file文件读取的一行
@@ -27,4 +27,4 @@ def line_process(line, wordCounts):
             wordCounts[word] = 1
 
 
-# main()
+# main('a.txt', 'love')
